@@ -1,0 +1,24 @@
+<html>
+    <body> 
+        <form  onsubmit="saveToLocalStorage(event)">
+            <label> Choose Expense Amount:</label>
+            <input name="amount"  id='amountId' type="number"   required/>
+            <label>Choose Description:</label>
+            <input name="description" id='descriptionId' type=" text"  required/>
+            <label>Choose Category: </label>
+            <select id="catId" name="cat">
+                <option value="movies">Movies</option>
+                <option value="fuel">Fuel</option>
+                <option value="Brand">Brand</option>
+            </select>
+            <button> Add Expense </button>
+        </form>
+        <ul id='listOfExpenses'></ul>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.4.1/axios.min.js"></script>
+        <script src="main.js">
+        </script>
+
+
+
+    </body>
+</html>
